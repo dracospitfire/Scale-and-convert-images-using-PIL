@@ -5,6 +5,7 @@ from PIL import Image
 
 for image in os.listdir("images"):
     if image.endswith('p'):
+        print(image)
         i = Image.open(os.path.join('images', image))
         file, ext = os.path.splitext(image)
         i = i.convert("RGB")
